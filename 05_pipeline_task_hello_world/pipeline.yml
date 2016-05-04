@@ -18,4 +18,5 @@ jobs:
         path: echo
         args: [{{my_argument}}]
   - task: hello-world2
+    params: { my_argument2: {{my_argument2}} }
     file: resource-tutorial/01_task_hello_world/task_hello_world.yml

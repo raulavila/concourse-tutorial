@@ -5,4 +5,4 @@ image: /opt/docker-images/busybox
 
 run:
   path: echo
-  args: [{{my_argument2}}]
+  args: [$my_argument2]
