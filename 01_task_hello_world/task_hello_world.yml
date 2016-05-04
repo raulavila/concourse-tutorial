@@ -7,4 +7,4 @@ inputs:
 - name: resource-tutorial
 
 run:
-  path: resource-tutorial/01_task_hello_world/test_script.sh
+  path: resource-tutorial/11_task_outputs_to_inputs/create_some_files.sh
