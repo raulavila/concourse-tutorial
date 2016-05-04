@@ -4,4 +4,4 @@ platform: linux
 image: /opt/docker-images/busybox
 
 run:
-  path: test_script.sh
+  path: resource-tutorial/01_task_hello_world/test_script.sh
