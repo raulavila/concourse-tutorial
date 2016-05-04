@@ -4,5 +4,4 @@ platform: linux
 image: /opt/docker-images/busybox
 
 run:
-  path: echo
-  args: [$my_argument2]
+  path: test_script.sh
