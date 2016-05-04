@@ -3,5 +3,8 @@ platform: linux
 
 image: /opt/docker-images/busybox
 
+inputs:
+- name: resource-tutorial
+
 run:
   path: resource-tutorial/01_task_hello_world/test_script.sh
