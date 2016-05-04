@@ -1,8 +1,8 @@
 ---
 platform: linux
 
-image: docker:///busybox
+image: /opt/docker-images/busybox
 
 run:
   path: echo
-  args: [hello world]
+  args: [{{my_argument2}}]

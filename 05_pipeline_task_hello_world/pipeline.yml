@@ -3,7 +3,7 @@ resources:
 - name: resource-tutorial
   type: git
   source:
-    uri: https://github.com/starkandwayne/concourse-tutorial.git
+    uri: https://github.com/raulavila/concourse-tutorial.git
 
 jobs:
 - name: job-hello-world
@@ -11,4 +11,11 @@ jobs:
   plan:
   - get: resource-tutorial
   - task: hello-world
+    config:
+      platform: linux
+      image: /opt/docker-images/busybox
+      run:
+        path: echo
+        args: [{{my_argument}}]
+  - task: hello-world2
     file: resource-tutorial/01_task_hello_world/task_hello_world.yml
