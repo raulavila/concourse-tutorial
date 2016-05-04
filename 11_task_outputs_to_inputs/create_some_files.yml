@@ -1,7 +1,7 @@
 ---
 platform: linux
 
-image: docker:///busybox
+image: /opt/docker-images/busybox
 
 inputs:
 - name: resource-tutorial
